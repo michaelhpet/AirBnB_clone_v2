@@ -2,7 +2,6 @@
 """Compress web_static/."""
 from fabric.api import local
 from time import strftime
-from datetime import date
 
 
 def do_pack():
