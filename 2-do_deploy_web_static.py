@@ -10,7 +10,7 @@ env.hosts = ["54.166.118.64", "54.164.92.22"]
 
 def do_deploy(archive_path):
     """Deploy archive to remote server."""
-    if not os.path.exists(archive_path):
+    if not path.exists(archive_path):
         return False
 
     filename = path.basename(archive_path)
