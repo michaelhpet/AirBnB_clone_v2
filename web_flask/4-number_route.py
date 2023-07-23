@@ -33,14 +33,10 @@ def python(text="is cool"):
     return f"Python {text}"
 
 
-@app.route("/number/<n>", strict_slashes=False)
+@app.route("/number/<int:n>", strict_slashes=False)
 def n(n):
     """Handle number route."""
-    try:
-        n = int(n)
-        return f"{n} is a number"
-    except ValueError:
-        pass
+    return f"{n} is a number"
 
 
 if __name__ == "__main__":
