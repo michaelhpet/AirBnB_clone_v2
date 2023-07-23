@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Flask web application."""
+"""Flask web application.
+Serves as API server
+"""
 from flask import Flask
 
 
